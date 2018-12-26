@@ -1,0 +1,13 @@
+手动打包源码 将源码安装到本地仓库，在需要安装的项目根路径执行以下命令：
+mvn clean source:jar install
+或者
+mvn source:jar
+
+mvn install
+
+mvn clean 把target目录删掉
+mvn clean compile 编译项目至target目录
+mvn clean package 编译+打包 至target目录
+mvn clean install 编译+打包 至target目录 然后安装到本地仓库
+mvn clean deploy 上传jar包到远程仓库
+mvn javadoc:jar 打包javadoc文档
